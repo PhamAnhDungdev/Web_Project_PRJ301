@@ -1,0 +1,45 @@
+/*// Do not forget to update getting-started/theming.md!
+:root {
+  // Custom variable values only support SassScript inside `#{}`.
+  @each $color, $value in $colors {
+    --#{$color}: #{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    --#{$color}: #{$value};
+  }
+
+  @each $bp, $value in $grid-breakpoints {
+    --breakpoint-#{$bp}: #{$value};
+  }
+
+  // Use `inspect` for lists so that quoted items keep the quotes.
+  // See https://github.com/sass/sass/issues/2383#issuecomment-336349172
+  --font-family-sans-serif: #{inspect($font-family-sans-serif)};
+  --font-family-monospace: #{inspect($font-family-monospace)};
+}*/
+:root {
+  /* Custom variable values */
+  /* Replace $colors with your color variables */
+  --primary-color: #ff0000;
+  --secondary-color: #00ff00;
+  --accent-color: #0000ff;
+
+  /* Theme colors */
+  /* Replace $theme-colors with your theme colors */
+  --theme-primary: #333333;
+  --theme-secondary: #666666;
+  --theme-accent: #999999;
+
+  /* Grid breakpoints */
+  /* Replace $grid-breakpoints with your grid breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* Font families */
+  /* Replace $font-family-sans-serif and $font-family-monospace with your font families */
+  --font-family-sans-serif: 'Arial', sans-serif;
+  --font-family-monospace: 'Courier New', monospace;
+}
